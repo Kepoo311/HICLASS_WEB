@@ -1,3 +1,10 @@
+window.onload = function() {
+  document.getElementById("splash").style.opacity = 0;
+  setTimeout(function() {
+    document.getElementById("splash").style.display = "none";
+  }, 1000); 
+};
+
 
 // Ambil semua section dan nav links
 const sections = document.querySelectorAll('section[id]');
