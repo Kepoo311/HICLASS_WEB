@@ -1,0 +1,351 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    background-color: #050920;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+nav {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    justify-items: center;
+    padding: 10px 0px;
+    background: rgba(7, 10, 43, 0.93);
+    /* border-radius: 16px; */
+    box-shadow: 0 2px 20px rgba(0, 60, 255, 0.233);
+    backdrop-filter: blur(9.1px);
+    -webkit-backdrop-filter: blur(9.1px);
+    border: 1px solid rgba(7, 10, 43, 0.32);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+nav .logo {
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+nav .menu {
+    background-color: #121037;
+    padding: 5px 20px;
+    display: flex;
+    gap: 20px;
+    border-radius: 32px;
+    justify-content: center;
+    align-items: center;
+}
+
+nav .menu a {
+    font-size: 13px;
+}
+
+.butts:hover {
+    background-color: #8a5cf6c7;
+    transition: 0.3s;
+}
+
+.butts {
+    background-color: #8B5CF6;
+    padding: 10px 20px;
+    border-radius: 32px;
+}
+
+.hero {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    padding: 20px;
+    background: 
+  radial-gradient(circle at 20% 20%, rgba(59, 130, 246, 0.15) 0%, transparent 40%),
+  radial-gradient(circle at 80% 30%, rgba(139, 92, 246, 0.2) 0%, transparent 35%),
+  radial-gradient(circle at 50% 80%, rgba(168, 85, 247, 0.1) 0%, transparent 45%),
+  linear-gradient(135deg, #0a0612 0%, #1a1040 40%, #2a1f5c 70%, #0f0a1a 100%);
+}
+
+
+
+.hero .nama_sistem {
+    background: linear-gradient(
+    to right,
+    rgba(96, 165, 250, 1),
+    rgba(167, 139, 250, 1),
+    rgba(192, 132, 252, 1)
+  );
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    font-size: 32px;
+    font-weight: 600;
+    margin-top: 100px;
+    width: 50%;
+}
+
+.hero .deskripsi_sistem {
+    font-size: 16px;
+    margin-top: 20px;
+    width: 50%;
+    color: rgba(255, 255, 255, 0.795);
+}
+
+.hero img {
+    margin-top: 30px;
+    border-radius: 16px;
+    width: 45%;
+}
+
+.kompo {
+    scroll-margin-top: 80px;
+    display: flex;
+    flex-direction: column;
+    padding: 30px 40px;
+    color: white;
+}
+
+.kompo .titel {
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.kompo_sect {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+}
+
+.kompo_sect .card {
+    width: 300px;
+    background-color: #070D25;
+    border-radius: 12px;
+    border: #0d194b 2px solid;
+    overflow: hidden;
+    transition: 0.3s ease-in-out;
+}
+
+.kompo_sect .card:hover{
+    border: #10205c 3px solid;
+}
+
+.kompo_sect .card:hover .img_bx img {
+    transform: scale(1.1);
+}
+
+.kompo_sect .card .img_bx {
+    width: 100%;
+    height: 250px;
+    position: relative;
+    overflow: hidden;
+}
+
+.kompo_sect .card .img_bx img {
+    transition: 0.3s ease-in-out;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.kompo_sect .card .img_bx .over {
+    display: flex;
+    position: absolute;
+    /* z-index: 9999; */
+    right: 0;
+    left: 5px;
+    bottom: 5px;
+}
+
+.kompo_sect .card .img_bx .over p {
+    background-color: #8B5CF6;
+    padding: 5px 10px;
+    font-size: 12px;
+    border-radius: 12px;
+}
+
+.kompo_sect .card .nama_kompo {
+    font-size: 18px;
+    font-weight: 600;
+    margin: 10px;
+}
+
+.kompo_sect .card .desk_kompo {
+    font-size: 14px;
+    margin: 0 10px 10px 10px;
+    color: rgba(255, 255, 255, 0.795);
+}
+
+.fitur {
+    scroll-margin-top: 80px;
+    display: flex;
+    flex-direction: column;
+    padding: 30px 40px;
+    color: white;
+}
+
+.fitur .titel {
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    align-self: center;
+}
+
+.fitur_sect {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+}
+
+.fitur_sect .card {
+    width: 250px;
+    background-color: #070D25;
+    border-radius: 12px;
+    border: #0d194b 2px solid;
+    padding: 20px;
+    transition: 0.3s ease-in-out;
+}
+
+.fitur_sect .card .icon {
+    font-size: 30px;
+    transition: 0.3s ease-in-out;
+    padding: 5px 10px;
+    border-radius: 8px;
+    color: #A684FF;
+    background-color: #1B1746;
+    width: fit-content;
+}
+
+.fitur_sect .card:hover .icon {
+    background-color: #782eff;
+    color: white;
+}
+
+.fitur_sect .card .fitur_titel {
+    font-size: 16px;
+    font-weight: 600;
+    margin: 10px 0;
+}
+
+.fitur_sect .card .fitur_desk {
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.795);
+}
+
+.fitur_sect .card:hover{
+    border: #10205c 2px solid;
+}
+
+.galery {
+    display: flex;
+    flex-direction: column;
+    padding: 30px 40px;
+}
+
+.galery .galtel {
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    color: white;
+    align-self: center;
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    color: rgba(255, 255, 255, 0.595);
+    font-size: 14px;
+    background-color: #11082e;
+}
+
+
+/* Responsive breakpoints */
+
+/* Extra small phones (<= 375px) */
+@media (max-width: 375px) {
+
+}
+
+/* Small phones / portrait phablets (<= 480px) */
+@media (max-width: 480px) {
+
+nav .logo {
+    font-size: 16px;
+}
+
+nav .menu {
+    background-color: #121037;
+    padding: 5px 20px;
+    display: flex;
+    gap: 20px;
+    border-radius: 32px;
+    justify-content: center;
+    align-items: center;
+}
+
+nav .menu a {
+    font-size: 10px;
+}
+nav .kontak {
+    font-size: 10px;
+}
+
+    .hero .nama_sistem {
+    font-size: 24px;
+    width: 100%;
+}
+
+.hero .deskripsi_sistem {
+    font-size: 12px;
+    width: 100%;
+}
+
+.hero img {
+    width: 100%;
+}
+}
+
+/* Small tablets and large phones (<= 640px) */
+@media (max-width: 640px) {
+
+}
+
+/* Tablets (<= 768px) */
+@media (max-width: 768px) {
+
+}
+
+/* Small desktops (<= 992px) */
+@media (max-width: 992px) {
+
+}
+
+/* Medium desktops (<= 1200px) */
+@media (max-width: 1200px) {
+
+}
+
+/* Large screens (>= 1201px) - slight layout relax */
+@media (min-width: 1201px) {
+
+}
