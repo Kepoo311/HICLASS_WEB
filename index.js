@@ -55,7 +55,7 @@ let kompo_content = '';
 
 komponen.forEach(kompo => {
     kompo_content += `
-    <div class="card">
+    <div data-aos="fade-up" class="card">
                 <div class="img_bx">
                     <img src="img/${kompo.img}" alt="${kompo.name}">
                     <div class="over">
@@ -84,7 +84,7 @@ let fitur_content = '';
 
 fitur.forEach(fit => {
     fitur_content += `
-    <div class="card">
+    <div class="card" data-aos="flip-up">
                 <p class="icon"><i class="${fit.icon}"></i></p>
                 <p class="fitur_titel">${fit.name}</p>
                 <p class="fitur_desk">${fit.desk}</p>
@@ -95,3 +95,4 @@ fitur.forEach(fit => {
 if (fitur_sect) {
     fitur_sect.innerHTML = fitur_content;
 }
+AOS.init();
